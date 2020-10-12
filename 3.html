@@ -3,7 +3,7 @@
 <head>
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYTBDD2GT3"></script>
 <script>
@@ -17,6 +17,19 @@ gtag('config', 'G-XYTBDD2GT3');
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
+    <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    }
+    else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+    }
+    ">
     <ol>
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.html">CSS</a></li>
